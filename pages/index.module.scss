@@ -1,0 +1,84 @@
+@import 'styles/variables.scss';
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.workingProcessContainer {
+  background-image: url('/images/lambo2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.bgContactInfo {
+  background-color: rgb(69, 134, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(69, 134, 229, 1) 0%,
+    rgba(5, 76, 180, 1) 72%,
+    rgba(1, 73, 179, 1) 100%
+  );
+}
+
+// Service Items
+
+.serviceItemRow {
+  .serviceItemCol:not(:last-child) {
+    margin-bottom: 37px;
+  }
+}
+.iconBox {
+  background-color: #313131;
+  color: #fff;
+  border-radius: 24px;
+  padding: 8.75px 14px;
+  margin-top: 37px;
+  .icon {
+    height: 80px;
+  }
+  .span {
+    text-align: center;
+  }
+}
+
+.aboutUsContainer {
+  .aboutUsHeader {
+    margin-bottom: 14px;
+  }
+  .aboutUsSubHeader {
+    margin-bottom: 8.75px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .iconBox {
+    .span {
+      width: 80px;
+    }
+  }
+}
+
+//tablet query
+@media screen and (min-width: 768px) {
+  .serviceItemRow {
+    .serviceItemCol {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  .iconBox {
+    padding: 20px 40px;
+    .icon {
+      height: 80px;
+    }
+  }
+}
+//Min width lg query
+@media screen and (min-width: 992px) {
+  .aboutUsContainer {
+    padding-left: 22px;
+
+    .span {
+      width: 120px;
+    }
+  }
+}
